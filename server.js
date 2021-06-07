@@ -1,11 +1,14 @@
 const express = require('express');
-const { notes } = require('./Develop/db/db.json');
+const { notes } = require('./db/db');
 
 const app = express();
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
-app.get('/Develop/db/db.json', (req, res) => {
-    res.send('Hello!');
-});
+app.use(express.json());
+
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 app.listen(3001, () => {
     console.log(`API server now on port 3001!`);
