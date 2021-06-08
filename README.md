@@ -32,9 +32,15 @@
 
   They need to know what dependencies to install in order to use the app.
 
-  ## License
+  ## Screenshots
 
-  
+  ![](./assets/NT-1.jpg)
+
+  ![](./assets/NT-2.jpg)
+
+  ![](./assets/NT-3.jpg)
+
+  ![](./assets/NT-4.jpg)
 
   ## Contributing
 
